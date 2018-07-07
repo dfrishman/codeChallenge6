@@ -11,7 +11,7 @@ function Adder(array, target) {
     for (var i=0; i < array.length; i++) {
         for (var j=i+1; j < array.length; j++) {
             if (array[i] + array[j] === target) {
-                result.push(array[i],array[j]);
+                result.push([array[i],array[j]]); //adding [] brackets around array i and j will make the result produce an array pair; instead of 24 numbers you'll have 12 pairs. 
                 // pair.push(array[i],array[j]);
                 // result.push(pair);
                 // pair = [];
